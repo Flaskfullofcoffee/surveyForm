@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/master.css">
+    <title>Form Test</title>
+  </head>
+  <body>
+    <h1 id=title>Steve's Goldfish Emporium</h1>
+<div class="form_wrap">
+  <p id="description">Please tell us how your goldfish buying experience was.</p>
+  <form action="" id="survey-form" method="post">
+    <div class="who">
+      <div class="labels">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="What's your name?" class="user_input" required>
+      </div>
+      <div class="labels">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" placeholder="What's your email?" class="user_input" required>
+      </div>
+      <div class="labels">
+        <label for="age">Age:</label>
+        <input type="number" id="number" min="1" max="95" name="user_age" placeholder="How old are you?" class="user_input" required>
+      </div>
+    </div>
+    <div class="survey">
+      <div class="survey1">
+        <label for="experience">How would you rate your goldfish experience?</label>
+      <select name="survey" id="dropdown">
+        <option disabled value>Select an option</option>
+        <option  value="amazing">Amazing</option>
+        <option value="pleasant">Pleasant</option>
+        <option value="alright">Alright</option>
+        <option value="lacking">Lacking</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+   </div>
+    <div class=survey>
+      <div class="survey2">
+        <label for="rating" class="rating">How likely is that you would recommend Steve's Goldfish Emporium to a friend?</label>
+      <div class="survey_radio">
+        <ul>
+          <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="radio-value">Absolutely</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="radio-value">Maybe</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="radio-value">No Way!</label></li>
+        </ul>
+      </div>
+    </div>
+   </div>
+    <div class="comment_section">
+      <label for="comments" class="comments">Any additional comments or suggestions?</label>
+      <textarea name="comments" id="comments" cols="30" rows="10" class="input_field"></textarea>
+    </div>
+    <div class="btn-wrap">
+      <button id="submit" type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+</div>
+
+  </body>
+</html>
