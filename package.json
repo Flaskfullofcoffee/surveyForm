@@ -4,6 +4,9 @@
   "description": "a responsive form field project for freecodecamp.org",
   "main": "index.js",
   "scripts": {
+    "sass:watch": "sass --watch scss:css",
+    "server": "browser-sync start --server --files css index.html scripts",
+    "start": "concurrently 'npm run sass:watch' 'npm run server'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,10 @@
   "homepage": "https://github.com/Flaskfullofcoffee/surveyForm#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.12.0"
   }
 }
